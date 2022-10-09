@@ -17,12 +17,12 @@ document.getElementById("btn").addEventListener("click", async () => {
     const response = await fetch(ENDPOINT);
     const users = await response.json(); //extract JSON from the http response
     console.log(users);
-    var results = "";
-    for (var i = 0; i < users.length; i++) {
+    let results = "";
+    for (let i = 0; i < users.length; i++) {
       results +=
         "<b>Vardas:</b> " +
         users[i].login +
-        "</br><b>Nuotraukos linkas:</b> " +
+        "</br><b>foto linkas:</b> " +
         users[i].avatar_url +
         "</br></br>";
     }

@@ -10,3 +10,12 @@ const audi = {
   year: 2005,
   color: 'white',
 };
+
+
+document.getElementById('showObjectKeys').addEventListener('click', showObjectKeys);
+
+function showObjectKeys() {
+  let keys = Object.keys(audi);
+  console.log(keys)
+}
+
